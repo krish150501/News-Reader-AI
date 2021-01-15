@@ -1,0 +1,48 @@
+html , body{
+    height: 100vh;
+    width:100%;
+}
+#root{
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(115.85deg, #20C0FF 0.53%, rgba(0, 146, 224, 0.76) 59.08%, rgba(28, 162, 255, 0) 116.43%);
+    overflow: hidden;
+}
+body{
+    margin : 0;
+    
+}
+*{
+    box-sizing : border-box;
+}
+html{
+    scroll-behavior:smooth ;
+}
+
+.ball1{
+float: left;
+position: fixed;
+top:-10%;
+width: 235px;
+height: 232px;
+border: 1px solid #E0E0E0;
+border-radius: 1000px;
+background: linear-gradient(318.01deg, #98C7E4 4.74%, rgba(31, 181, 241, 0.81) 100%);
+mix-blend-mode: luminosity;
+filter: blur(1px);
+
+}
+.textContainer{
+    height:150px;
+    width: 300px;
+    margin-left:50% ;
+    transform:translateX(-50%) ;
+}
+.text{
+font-family: Sorts Mill Goudy;
+font-style: italic;
+font-weight: 1000;
+font-size: 100px;
+color: #FFFFFF;
+}
