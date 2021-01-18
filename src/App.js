@@ -6,17 +6,20 @@ import wtn from 'word-to-numbers'
 const App = ()=>{
     const [newsArticles,setNewsArticles]=useState([])
     const [activeArticles,setActiveArticles]=useState(-1)
+
     useEffect(()=>{
         alanbtn({
             key:'f971ae37dae4c62516fea4957fc0327b2e956eca572e1d8b807a3e2338fdd0dc/stage',
-            onCommand:({command,articles,number} )=>{
+            onCommand:({command,articles,number,articleno} )=>{
                 if(command==='newHeadlines'){
-                    setNewsArticles(articles)
+                     setNewsArticles(articles)
                     setActiveArticles(-1)
                 }
                 else if(command==='highlight')
                 {
-                    setActiveArticles((prev)=>prev+1)
+                    
+                        setActiveArticles(articleno-1)
+                    
                 }
                 else if(command==='open')
                 {
